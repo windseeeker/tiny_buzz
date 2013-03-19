@@ -23,13 +23,11 @@
 char *base64_encode(const char*,char **);
 char *base64_decode(const char*,char **);
 
-struct Version;
-void version_to_str(struct Version ver, char** out_ver);
-
 struct Version {
     char high;
     char low;
 };
+void version_to_str(struct Version ver, char** out_ver);
 
 struct RequestLine {
     char method[8];
